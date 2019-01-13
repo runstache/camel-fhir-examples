@@ -10,7 +10,7 @@ These examples are as is and do not provide any sort of production support.  My 
 
 The following examples are included within the project
 
-* Bundle: An implementation of the Camel Fhir Component that creates and sends Fhir Bundle containing a patient, encounter and locations from a HL7 message.
+* __Bundle:__ An implementation of the Camel Fhir Component that creates and sends Fhir Bundle containing a patient, encounter and locations from a HL7 message.
 
 ### Extras ###
 
@@ -18,11 +18,11 @@ I have also included a Docker Compose file that will create an instance of the H
 
 ### Settings ###
 
-The following settings are used by all of the Examples:
+The following settings in application.settings are used by all of the Examples:
 
-* fhirServer: This is the URL to the Fhir Server. By default this is set to the url of the contain Fhir Server.
-* fhirVersion: This is the version of Fhir. The current examples utilize the DSTU3 objects.
-* logging.file: This is the location where the logfile will be written to.
-* logging.level.root: This is the default logging level.
-* camel.springboot.name: This is the Camel Context Name that is created in Spring Boot.
-* camel.springboot.main-run-controller: This option will start the Camel Routes and keep them running. This prevents Springboot from shutting down Camel after initializing.
+* __fhirServer:__ This is the URL to the Fhir Server. By default this is set to the url of the contain Fhir Server.
+* __fhirVersion:__ This is the version of Fhir. The current examples utilize the DSTU3 objects.
+* __logging.file:__ This is the location where the logfile will be written to.
+* __logging.level.root:__ This is the default logging level.
+* __camel.springboot.name:__ This is the Camel Context Name that is created in Spring Boot.
+* __camel.springboot.main-run-controller:__ This option will start the Camel Routes and keep them running. This prevents Springboot from shutting down Camel after initializing.

@@ -7,10 +7,10 @@ This Example utilizes the BundleRouteBuilder within the project.
 
 This example uses the following settings in the application.properties file:
 
-* importFilePath: This is the location when the HL7 files are picked up from.
-* oid.locationOid: This is the system value used for Fhir Location Identifiers.
-* oid.encounterOid: This is the system value used for Fhir Encounter Identifiers.
-* oid.patientOid: This is the system value used for Fhir Patient Identifiers.
+* __importFilePath:__ This is the location when the HL7 files are picked up from.
+* __oid.locationOid:__ This is the system value used for Fhir Location Identifiers.
+* __oid.encounterOid:__ This is the system value used for Fhir Encounter Identifiers.
+* __oid.patientOid:__ This is the system value used for Fhir Patient Identifiers.
 
 ### Running the Applications ###
 
