@@ -1,0 +1,30 @@
+{
+    "run": {
+        "default": "",
+        "items": [
+            {
+                "name": "camel-fhir-examples",
+                "projectName": "camel-fhir-examples",
+                "workingDirectory": "c:\\Users\\shieldsl\\GitHubRepo\\camel-fhir-examples",
+                "args": [],
+                "vmargs": [],
+                "env": {},
+                "preLaunchTask": ""
+            }
+        ]
+    },
+    "debug": {
+        "default": "",
+        "items": [
+            {
+                "name": "camel-fhir-examples",
+                "projectName": "camel-fhir-examples",
+                "workingDirectory": "c:\\Users\\shieldsl\\GitHubRepo\\camel-fhir-examples",
+                "args": [],
+                "vmargs": [],
+                "env": {},
+                "preLaunchTask": ""
+            }
+        ]
+    }
+}

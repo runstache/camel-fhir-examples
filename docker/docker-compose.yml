@@ -1,0 +1,25 @@
+version: '3.1'
+
+services:
+  db:
+    container_name: db
+    image: mysql:5.5
+    environment:
+      - MYSQL_ROOT_PASSWORD=admin
+      - MYSQL_DATABASE=hapi
+      - MYSQL_USER=hapiuser
+      - MYSQL_PASSWORD=hapipassword
+    ports:
+      - "3310:3306"
+  fhir-server:
+    image: runstache/hapi-fhir-server:v1
+    container_name: fhir-server
+    ports:
+      - "8086:8080"
+    links:
+      - db
+    environment:
+      - DATABASE_URL=jdbc:mysql://db/hapi
+      - DATABASE_USER=hapiuser
+      - DATABASE_PASSWORD=hapipassword
+      - POOL_SIZE=20
