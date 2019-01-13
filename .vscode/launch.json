@@ -1,0 +1,11 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - CamelFhirExamplesApplication",
+      "request": "launch",
+      "mainClass": "com.lswebworld.fhir.camelfhirexamples.CamelFhirExamplesApplication",
+      "projectName": "camel-fhir-examples"
+    }
+  ]
+}

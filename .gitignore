@@ -3,10 +3,6 @@
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
-/docker/cert
-/docker/app
-/docker/datadog/certs
-/opt/
 # Compiled class file
 *.class
 
