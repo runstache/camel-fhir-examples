@@ -1,7 +1,15 @@
 package com.lswebworld.fhir.camelfhirexamples.builders;
 
 import ca.uhn.hl7v2.HL7Exception;
+
+import java.io.IOException;
+
+import com.lswebworld.fhir.camelfhirexamples.util.FhirUtil;
+
 import org.apache.camel.builder.RouteBuilder;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 /**
@@ -13,9 +21,10 @@ import org.springframework.stereotype.Component;
  */
 @Component
 public class BundleRouteBuilder extends RouteBuilder {
-
+  
   @Override
-  public void configure() {
+  public void configure() throws IOException {
+    
     onException(HL7Exception.class)
       .log("HL7 Exception");
     

@@ -2,9 +2,10 @@ package com.lswebworld.fhir.camelfhirexamples.util;
 
 import ca.uhn.hl7v2.HL7Exception;
 import ca.uhn.hl7v2.model.Message;
-import ca.uhn.hl7v2.util.Terser;
-import com.lswebworld.fhir.camelfhirexamples.configuration.OidSettings;
 
+import ca.uhn.hl7v2.util.Terser;
+
+import com.lswebworld.fhir.camelfhirexamples.configuration.OidSettings;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.UUID;
@@ -94,7 +95,7 @@ public class FhirUtil {
       encounter.setStatus(EncounterStatus.INPROGRESS);
     }
     encounter.setPeriod(period);
-
+    
     return encounter;
   }
 
@@ -109,6 +110,7 @@ public class FhirUtil {
     building.setPhysicalType(buildPhysicalType("bu", "Building"));
     building.addIdentifier(buildIdentifier(
           settings.getLocationOid(), getHl7Value("PV1-3-4-1", hl7Message), false));
+    building.setDescription(getHl7Value("/.ZPD(0)-2-1-1",hl7Message));
     return building;
   }
 
